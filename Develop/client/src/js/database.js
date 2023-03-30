@@ -22,7 +22,7 @@ export const putDb = async (content) => {
   //open the object store for this db
   const store = transac.objectStore('jate');
   //use .add() to pass the content into the store as a key:value pair
-  const request = store.add({content: content});
+  const request = store.put({id: 1, content: content});
 
   const result = await request;
   console.log("Data saved to the database", result);
@@ -37,12 +37,15 @@ export const getDb = async () => {
   const transac = jateDb.transaction('jate', 'readonly');
   //open the object store
   const store = transac.objectStore('jate');
-  //.getAll() gets all of the data in the db
-  const request = store.getAll();
+  //.get the one with id of 1
+  const request = store.get(1);
 
   const result = await request;
   console.log('request.value', result);
-  return result;
+  if(result){
+    return result.content;
+  }
+  else { return; }
 };
 
 //start the database
