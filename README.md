@@ -12,8 +12,8 @@ This application is available for use at https://nameless-wildwood-53462.herokua
 ## Usage
 
 You can use the Text Editor application by visiting https://nameless-wildwood-53462.herokuapp.com/ on your browser.  You can also (optionally) click the "install" button on the page to download the web application to your device.  You can add and update your own notes to the page.  The application is able to continue to function even with intermittent internet connection, so you will not lose access to your notes.
+<img width="1792" alt="Screenshot 2023-04-03 at 3 51 43 PM" src="https://user-images.githubusercontent.com/113466697/229614635-c9d69a73-d63f-4c30-9f88-c946ed166fcd.png">
 
-`!(Screenshot)Text-Editor-PWA/Assets/Screenshot.png `
 
 ## Credits
 
